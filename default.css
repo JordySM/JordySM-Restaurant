@@ -1,0 +1,57 @@
+:root
+{
+    --amarillo: #e8dc8f; /*rgba(232,220,143,255)*/
+    --negro: #373739; /*rgba(55,55,57,255)*/
+    --blanco: #fffefe; /*rgba(255,254,254,255)*/
+    --naranja: #e88885; /*rgba(232,136,133,255)*/
+    --gris: #f4f4f4; /*rgba(244,244,244,255)*/
+    --gris-osc: #e0dcdc; /*rgb(224,220,220)*/
+}
+
+.container
+{
+    /* width: 1320px; */
+    width: 1140px;
+    margin: auto;
+    padding: 0 1rem;
+}
+@media(max-width: 1400px)
+{
+    .container
+    {
+        width: 1140px;
+    }    
+}
+@media(max-width: 1200px)
+{
+    .container
+    {
+        width: 960px;
+    }    
+}
+@media(max-width: 990px)
+{
+    .container
+    {
+        width: 720px;
+    }    
+}
+@media(max-width: 770px)
+{
+    .container
+    {
+        width: 540px;
+    }    
+}
+@media(max-width: 576px)
+{
+    .container
+    {
+        width: 100%;
+    }    
+}
+
+.pointer
+{
+    cursor: pointer;
+}

@@ -1,0 +1,326 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+}
+body
+{    
+    width: 100%;
+    height: 100vh;
+    color: var(--negro);
+    background: url(restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a
+{
+    color: var(--negro);
+    text-decoration: none;
+    cursor: pointer;
+}
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.info-data
+{
+    padding: .2rem;
+    background: var(--amarillo);
+    color: var(--negro);
+}
+.data
+{
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: .85rem;;
+}
+.data li, .data li a
+{
+    transition: all ease-in .2s;
+}
+.data li:hover,.data li:hover a
+{
+    cursor: pointer;
+    color: var(--naranja);
+}
+
+.main-menu
+{
+    width: 100%;
+    background: var(--negro);
+    color: var(--blanco);
+
+    
+}
+.main-menu .menu-content
+{
+    display: flex;
+    gap: 30px;
+}
+.main-menu .logo
+{
+    font-size: 3rem;
+}
+.main-menu .menu-options
+{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.main-menu .menu-options a.selected
+{
+    color: var(--amarillo);
+}
+.main-menu .menu-options a.selected::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--amarillo);
+    transition: width .3s;
+}
+.main-menu .menu-options a
+{
+    color: var(--blanco);
+    text-decoration: none;
+    border: 3px solid transparent;
+    font-weight: 600; 
+    padding: 5px 10px;
+}
+.main-menu .menu-options a::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--amarillo);
+    transition: width .3s;
+}
+.main-menu .menu-options a:hover
+{
+    color: var(--amarillo);
+}
+.main-menu .menu-options a:hover::after
+{
+    width: 100%;
+}
+
+.section-schedule .message-schedule
+{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: var(--negro);
+    background: rgba(255,255,255,.3);
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    padding: 2rem 3rem;
+}
+.section-schedule .message-schedule h1
+{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+.section-schedule .message-schedule p
+{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.section-schedule .message-schedule .logo
+{
+    font-size: 6rem;
+}
+.section-schedule .section-booking-button
+{
+    display: inline-block;
+    width: auto !important;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.section-schedule .booking-button
+{
+    background: var(--blanco);
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+}
+.section-presentation, .section-outdoor
+{
+    background: var(--blanco);    
+    display: flex;
+    flex-direction: column;
+    
+}
+.section-presentation h2, .section-outdoor h2
+{
+    font-size: 3rem;
+    font-family: 'Dancing script', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    /* margin-top: 1rem; */
+    
+}
+.section-presentation p, .section-outdoor p
+{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+.section-presentation .bi, .section-outdoor .bi
+{
+    font-size: 1.7rem;
+    color: var(--naranja);
+}
+.section-presentation .content-presentation, .section-outdoor .content-outdoor
+{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 3rem 8rem;
+    background: var(--gris-osc);
+    color: rgba(0,0,0,.4);
+    /* border: 1px solid black; */
+}
+@media(max-width: 990px)
+{
+    .section-presentation .content-presentation
+    {
+        padding: 2rem;
+    }   
+}
+
+.section-certificates
+{
+    background: var(--blanco);    
+    display: flex;
+    flex-direction: column;
+}
+.section-certificates .content-certificates
+{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.section-certificates .content-certificates a
+{
+    height: 140px;
+}
+.section-certificates .content-certificates img
+{
+    height: 100px;
+    transition: all ease-in .2s;
+}
+.section-certificates .content-certificates img:hover
+{
+    height: 120px;
+}
+
+.section-gallery
+{
+    background: var(--blanco);
+    
+}
+.section-gallery .content-gallery
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.section-gallery .content-gallery .picture
+{
+    width: 10%;
+    height: 350px;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+}
+.section-gallery .content-gallery .picture:hover
+{
+    width: 50%;
+}
+@media(max-width: 1201px)
+{
+    .section-gallery .content-gallery .picture:hover
+    {
+        width: 70%;
+    }  
+}
+.section-gallery .content-gallery img
+{
+    height: 100%;
+}
+.row-outdoor
+{
+    display: flex;
+}
+@media(max-width: 1200px)
+{
+    .row-outdoor
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.row-outdoor .text
+{
+    width: 100%;
+    padding: 0 1rem;
+}
+.row-outdoor img
+{
+    margin-top: 1.5rem;
+    width: 30rem;
+}
+
+.section-location
+{
+    background: var(--gris-osc);
+}
+.section-location .content-location
+{
+    display: flex;
+}
+.section-location .content-location h3
+{
+    font-family: 'Dancing script', sans-serif;
+    font-size: 2rem;
+}
+.section-location .content-location p
+{
+    margin-top: 1.5rem;
+}
+.section-location .content-location .text
+{
+    width: 30%;
+    color: rgba(0,0,0,.4);
+    margin-top: 2rem;
+}
+.section-location .content-location iframe
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    height: 350px;
+}
