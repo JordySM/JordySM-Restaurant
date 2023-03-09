@@ -11,7 +11,7 @@ body
     width: 100%;
     height: 100vh;
     color: var(--negro);
-    background: url(restaurant.jpg);
+    background: url(images/restaurant/restaurant.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
