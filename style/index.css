@@ -334,9 +334,56 @@ footer
     display: flex;
     flex-direction: column;
 }
+footer  .content-footer
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+footer  .content-footer .section-footer
+{
+    padding: 1rem 0;
+}
+footer  .content-footer .section-footer ul
+{
+    list-style: none;
+    padding: 0 1rem 1rem 1rem;
+    line-height: 1.7rem;
+}
+footer  .content-footer .section-footer ul a
+{
+    color: var(--blanco);
+    text-decoration: none;
+}
+footer  .content-footer a
+{
+    display: flex;
+    flex-direction: column;
+}
+footer  .content-footer a span::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--amarillo);
+    transition: width .7s;
+}
+footer  .content-footer a span:hover
+{
+    color: var(--amarillo);
+}
+footer  .content-footer a:hover span::after
+{
+    width: 100%;
+}
 footer .footer-copyright
 {
     padding: .5rem;
     font-size: .7rem;
     text-align: center;
+}
+footer .text-copyright
+{
+    font-size: .6rem;
+    font-style: italic;
 }
