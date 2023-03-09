@@ -255,10 +255,12 @@ header
     height: 350px;
     overflow: hidden;
     transition: all ease-in-out .5s;
+    filter: brightness(25%);
 }
 .section-gallery .content-gallery .picture:hover
 {
     width: 50%;
+    filter: brightness(100%);
 }
 @media(max-width: 1201px)
 {
@@ -323,4 +325,18 @@ header
     margin-bottom: 2rem;
     width: 70%;
     height: 350px;
+}
+
+footer
+{
+    background: var(--negro);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-copyright
+{
+    padding: .5rem;
+    font-size: .7rem;
+    text-align: center;
 }
