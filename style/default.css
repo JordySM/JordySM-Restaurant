@@ -55,3 +55,106 @@
 {
     cursor: pointer;
 }
+
+
+/* Header */
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.info-data
+{
+    padding: .2rem;
+    background: var(--amarillo);
+    color: var(--negro);
+}
+.data
+{
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: .85rem;;
+}
+.data li, .data li a
+{
+    transition: all ease-in .2s;
+}
+.data li:hover,.data li:hover a
+{
+    cursor: pointer;
+    color: var(--naranja);
+}
+
+.main-menu
+{
+    width: 100%;
+    background: var(--negro);
+    color: var(--blanco);
+
+    
+}
+.main-menu .menu-content
+{
+    display: flex;
+    gap: 30px;
+}
+.main-menu .logo
+{
+    font-size: 3rem;
+}
+.main-menu .menu-options
+{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.main-menu .menu-options a.selected
+{
+    color: var(--amarillo);
+}
+.main-menu .menu-options a.selected::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--amarillo);
+    transition: width .3s;
+}
+.main-menu .menu-options a
+{
+    color: var(--blanco);
+    text-decoration: none;
+    border: 3px solid transparent;
+    font-weight: 600; 
+    padding: 5px 10px;
+}
+.main-menu .menu-options a::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--amarillo);
+    transition: width .3s;
+}
+.main-menu .menu-options a:hover
+{
+    color: var(--amarillo);
+}
+.main-menu .menu-options a:hover::after
+{
+    width: 100%;
+}
+/* Fin Header  +*/
