@@ -1,0 +1,32 @@
+.product
+{
+    background-color: var(--blanco);
+    
+}
+.product-content
+{
+    padding: 1rem;
+    background-color: var(--blanco);
+}
+/* Producto izquierda */
+.product.left
+{
+    background: linear-gradient(90deg, rgba(232,136,133,1) 0%, rgba(232,136,133,1) 49%, rgba(255,254,254,1) 51%, rgba(255,254,254,1) 100%);
+    
+}
+.product.left .product-content
+{
+    background: radial-gradient(circle at 0%, var(--naranja), var(--naranja) calc(50% - 1px),var(--blanco) 50%);
+}
+/* Fin Producto izquierda */
+
+/* Producto derecha */
+.product.right
+{
+    background: linear-gradient(-90deg, rgba(232,136,133,1) 0%, rgba(232,136,133,1) 49%, rgba(255,254,254,1) 51%, rgba(255,254,254,1) 100%);
+}
+.product.right .product-content
+{
+    background: radial-gradient(circle at 100%, var(--naranja), var(--naranja) calc(50% - 1px),var(--blanco) 50%);
+}
+/* Fin producto derecha */
