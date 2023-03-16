@@ -7,6 +7,17 @@
 {
     padding: 1rem;
     background-color: var(--blanco);
+    display: flex;
+}
+.product-content .article-image, .product-content .article-text
+{
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 /* Producto izquierda */
 .product.left
@@ -28,5 +39,21 @@
 .product.right .product-content
 {
     background: radial-gradient(circle at 100%, var(--naranja), var(--naranja) calc(50% - 1px),var(--blanco) 50%);
+    flex-direction: row-reverse;
 }
 /* Fin producto derecha */
+@media(max-width: 990px)
+{
+    .product, .product-content
+    {
+        background: var(--naranja) !important;
+    }
+    .product-content
+    {
+        flex-direction: column !important;
+    }
+    .product-content .article-image, .product-content .article-text
+    {
+        width: 100%;
+    }
+}
