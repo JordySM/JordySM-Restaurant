@@ -16,6 +16,13 @@
     cursor: default;
 }
 
+a
+{
+    color: var(--negro);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .container
 {
     /* width: 1320px; */

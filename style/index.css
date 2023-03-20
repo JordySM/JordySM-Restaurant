@@ -8,14 +8,6 @@ body
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-a
-{
-    color: var(--negro);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
 .section-schedule .message-schedule
 {
     margin-top: 5rem;
